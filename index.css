@@ -20,9 +20,18 @@ a {
   color: white;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 .general {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   border: 3px solid #000;
   margin: 25px;
@@ -38,9 +47,37 @@ a {
   margin-top: 25px;
 }
 
+.title {
+  font-size: 2rem;
+  font-style: bold;
+  font-weight: 700;
+}
+
 .links {
   background-color: var(--btn4);
   padding: 7px;
   border: 3px solid var(--btn3);
   border-radius: 15px;
+  text-align: center;
+}
+
+.links:hover {
+  background-color: var(--btn3);
+  border: 3px solid var(--btn4);
+}
+
+.links:active {
+  border: 3px solid var(--btn1);
+  background-color: var(--btn3);
+}
+
+@media (min-width: 900px) {
+  .general {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
