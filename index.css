@@ -71,6 +71,28 @@ h2 {
   background-color: var(--btn3);
 }
 
+@media (min-width: 576px) {
+  .general {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .general {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 900px) {
   .general {
     grid-template-columns: repeat(6, 1fr);

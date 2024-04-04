@@ -59,9 +59,10 @@ img {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: #b6bebe89;
+  background-color: #e0e0e089;
   padding: 35px;
   border-radius: 100px;
+  gap: 20px;
 }
 
 .info {
@@ -85,4 +86,60 @@ hr {
 
 .sub-text {
   text-align: justify;
+}
+
+@media (min-width: 930px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .grid-item {
+    margin: 0 auto;
+  }
+
+  .g1 {
+    justify-content: center;
+    align-items: start;
+    z-index: 3;
+    position: relative;
+    left: 280px;
+  }
+
+  .title {
+    font-size: 4.6rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 10px 40px;
+  }
+
+  .container-info {
+    flex-direction: row;
+    width: 110%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    position: relative;
+    top: 120px;
+    right: 200px;
+  }
+
+  .info {
+    width: 33.3%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0px;
+  }
 }
