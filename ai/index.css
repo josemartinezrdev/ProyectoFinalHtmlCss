@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(214, 214, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 214, 214, 1) 0%,
+    rgba(155, 166, 166, 1) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  color: #363830;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 25px auto;
+}
+
+.title {
+  color: #363830;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.text {
+  width: 80%;
+  text-align: justify;
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  background-color: #363830;
+  color: white;
+  padding: 6px 25px;
+  border-radius: 35px;
+}
+
+img {
+  width: 80%;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #b6bebe89;
+  padding: 35px;
+  border-radius: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+hr {
+  border: none;
+  border-radius: 20px;
+  background-color: #363830;
+  width: 25px;
+  height: 3px;
+}
+
+.num {
+  width: min-content;
+}
+
+.sub-text {
+  text-align: justify;
+}
