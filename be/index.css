@@ -6,29 +6,49 @@
   color: #252525;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .grid {
   margin: 25px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
 .grid-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
 }
 
 .div-info-f1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .star {
-    width: 20%;
-    
+  width: 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.div-imgs-f1 {
+  display: flex;
+  justify-content: center;
+}
+
+.div-imgs-f1 img {
+  width: 80%;
+}
+
+.img-3 {
+  width: 80%;
 }
 
 .btn {
@@ -40,6 +60,40 @@
   border-radius: 25px;
 }
 
-img {
-  width: 10%;
+@media (min-width: 930px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .titles {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .star {
+    bottom: 35%;
+    left: 35%;
+  }
+
+  .star-2 {
+    position: relative;
+    bottom: 13%;
+    right: 25%;
+  }
+
+  .div-imgs-f1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-imgs-f1 img {
+    width: 100%;
+  }
+
+  .img-3 {
+    width: 90%;
+  }
 }

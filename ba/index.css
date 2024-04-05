@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 img {
+  font-family: "Poppins", sans-serif;
   width: 70%;
   margin: 10px auto;
 }
@@ -72,6 +75,11 @@ i {
 }
 
 @media (min-width: 930px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .cont {
     display: flex;
     height: 80%;
@@ -82,7 +90,7 @@ i {
   }
 
   img {
-    width: 50%;
+    width: 40%;
   }
 
   .img1 {
@@ -111,7 +119,7 @@ i {
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 3.6rem;
     text-align: start;
   }
 
@@ -130,6 +138,7 @@ i {
 
   .list {
     flex-direction: row;
-    width: 70%;
+    width: 80%;
+    height: 100%;
   }
 }
