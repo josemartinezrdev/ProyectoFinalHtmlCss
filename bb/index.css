@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins",  sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+.olas {
+  position: absolute;
+  bottom: 80%;
+  left: 44%;
+  width: 50%;
+}
+.centro {
+  position: absolute;
+  width: 15%;
+  left: 70%;
+}
+.imgSeccion1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img1,
+.img2 {
+  width: 180px;
+  height: 270px;
+}
+.img1 {
+  margin-top: 80px;
+}
+.asterisco {
+  width: 75%;
+  padding-top: 25px;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flor {
+  width: 50%;
+  height: 60%;
+}
+.rulo {
+  margin-top: 100px;
+  width: 30%;
+  height: 60%;
+}
+.container {
+  display: flex;
+}
+.card img {
+  width: 25%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+}
+p {
+  padding-bottom: 5%;
+}
+@media (min-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8%;
+  }
+  .olas {
+    bottom: 72%;
+    left: 38%;
+    width: 20%;
+  }
+  .rulo {
+    margin-top: 100px;
+    width: 20%;
+  }
+  .centro {
+    position: absolute;
+    width: 15%;
+    left: 40%;
+    top: 50%;
+  }
+  .container{
+    justify-content: space-between;
+  }
+  .img1 {
+    margin-top: 30%;
+    width: 45%;
+    height: 60%;
+  }
+  .img2 {
+    width: 80%;
+  }
+  .card{
+    display: flex;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+  h1 {
+    width: 5rem;
+  }
+  p {
+    width: 80%;
+    padding: 5px;
+  }
+}
