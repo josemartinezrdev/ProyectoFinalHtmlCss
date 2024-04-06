@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+/* #adadaf */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #252525;
+  background-image: url("imgs/cg1.png");
+  background-repeat: no-repeat;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+  padding: 25px;
+  color: white;
+  background-color: #afaeb28c;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-lst {
+  display: flex;
+  justify-content: center;
+}
+
+.item-lst img {
+  width: 50%;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #519bfd;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+@media (min-width: 930px) {
+  body {
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-1 {
+    color: white;
+    background-color: #afaeb28c;
+    border-radius: 20px;
+    width: 60%;
+    text-align: start;
+  }
+
+  .sub {
+    width: 100%;
+  }
+
+  .item-lst img {
+    width: 55%;
+  }
+}
