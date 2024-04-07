@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inf {
+  background-image: url("imgs/ci1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+}
+
+.info-1 {
+  padding: 15px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.info-1 h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.info-1 p {
+  text-align: justify;
+}
+
+.lista {
+  padding: 25px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-lst {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 220px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 15px;
+}
+
+.round {
+  border-radius: 25px 25px 0 0;
+}
+
+.round-invert {
+  border-radius: 0 0 25px 25px;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 25px;
+}
+
+@media (min-width: 930px) {
+  .inf {
+    height: 100vh;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info-1 {
+    width: 40%;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 12%;
+  }
+
+  .info-1 h1 {
+    text-align: start;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  .info-1 p {
+    text-align: start;
+  }
+
+  .empty {
+    width: 40%;
+  }
+
+  .lista {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 15%;
+  }
+
+  .item-lst {
+    width: 200px;
+  }
+
+  .round {
+    border-radius: 25px 0 0 25px;
+  }
+
+  .round-invert {
+    border-radius: 0 25px 25px 0;
+  }
+}

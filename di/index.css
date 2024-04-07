@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-image: url("imgs/di1.png");
+  background-repeat: no-repeat;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "texto" "reds" "bot";
+  gap: 25px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+}
+
+.grid-item:nth-child(1) {
+  grid-area: texto;
+}
+.grid-item:nth-child(2) {
+  grid-area: reds;
+}
+
+.grid-item:nth-child(3) {
+  grid-area: bot;
+}
+
+.btn {
+  text-align: start;
+  padding: 10px 30px;
+  background-color: white;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 25px;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 20px;
+  width: 90%;
+  margin: 25px;
+}
+
+.info-1 h1 {
+  font-weight: 600;
+}
+
+.div-reds {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px auto;
+}
+
+.cont-lst {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lista {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-lst {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+hr {
+  border: none;
+  width: 4px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+@media (min-width: 930px) {
+  body {
+    background-position: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "reds texto" "bot bot";
+  }
+
+  .grid-item {
+    justify-content: center;
+    margin: 3% 10%;
+  }
+
+  .info-1 {
+    align-items: end;
+    text-align: end;
+    width: 100%;
+  }
+
+  .info-1 h1 {
+    font-size: 3.2rem;
+    width: 120%;
+  }
+
+  .div-reds {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .div-reds img {
+    width: 5%;
+  }
+
+  .cont-lst {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lista {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .item-lst {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+}
