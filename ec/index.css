@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.grid {
+  background-image: url("imgs/ec1.png");
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin: 25px;
+}
+
+.btn {
+  text-align: start;
+  padding: 10px 30px;
+  background-color: #fe6e06;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 90%;
+  position: relative;
+}
+
+.info-1 img {
+  width: 10%;
+  position: absolute;
+  top: 3%;
+  left: 70%;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-lst {
+  background-color: #faefe3;
+  color: black;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.imgs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+
+.imgs img:nth-child(1) {
+  position: absolute;
+  width: 80%;
+}
+
+.imgs img:nth-child(2) {
+  position: absolute;
+  width: 80%;
+  top: 20%;
+  left: 1%;
+}
+
+@media (min-width: 930px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    margin-top: 15%;
+  }
+
+  .info-1 {
+    align-items: start;
+    text-align: start;
+    width: 95%;
+  }
+
+  .info-1 h1 {
+    font-size: 5rem;
+  }
+
+  .info-1 img {
+    width: 22%;
+    top: -5%;
+    left: 55%;
+  }
+
+  .lista {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    top: 17%;
+    left: 10%;
+    width: 110%;
+  }
+
+  .imgs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgs img:nth-child(1) {
+    position: absolute;
+    width: 80%;
+    height: 230%;
+  }
+
+  .imgs img:nth-child(2) {
+    position: absolute;
+    width: 80%;
+    height: 250%;
+    top: 30%;
+    left: 1%;
+  }
+}
