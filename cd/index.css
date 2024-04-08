@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins",  sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "seccion2 "
+    "seccion1";
+  align-items: center;
+  margin: 0 15px 15px 15px;
+}
+.seccion1 {
+  grid-area: seccion1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.seccion2 {
+  grid-area: seccion2;
+  text-align: center;
+  position: relative;
+  height: 400px;
+}
+.img1 {
+  width: 60%;
+  position: absolute;
+  left: 25%;
+  z-index: 2;
+}
+.asterisco {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+
+  width: 45%;
+}
+.estrella {
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+  width: 20%;
+}
+.yellow {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+}
+
+.letras {
+  color: #e3b635;
+}
+
+.info {
+  display: flex;
+  gap: 1px;
+}
+.item {
+  padding: 10px;
+  background-color: #242424;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.item img {
+  width: 20%;
+}
+.item p,
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  background-color: #e3b635;
+  text-align: center;
+  color: black;
+  padding: 15px;
+  width: 50%;
+  border-radius: 20px;
+}
+hr {
+  height: 5px;
+  background-color: black;
+}
+@media (min-width: 750px) {
+  .grid {
+    grid-template: "seccion1 seccion2";
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 5% 1% 5%;
+  }
+  .seccion1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .seccion2 {
+    width: 100vh;
+    height: 100vh;
+  }
+  .asterisco {
+    top: 12%;
+  }
+  .estrella {
+    bottom: 10%;
+  }
+  .info {
+    gap: 5%;
+    text-align: center;
+    margin-top: 10%;
+  }
+}

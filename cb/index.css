@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins",  sans-serif;
+  background-color: #010625;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "seccion1"
+    "seccion2"
+    "seccion3";
+  align-items: center;
+  margin: 6%;
+  gap: 10px;
+}
+.img2 {
+  display: flex;
+  width: 80%;
+}
+
+.seccion1 {
+  grid-area: seccion1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.seccion1 img {
+  width: 90%;
+}
+.seccion2 {
+  grid-area: seccion2;
+}
+.seccion3 {
+  grid-area: seccion3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.seccion3 img {
+  width: 80%;
+}
+h1,
+p {
+  color: white;
+}
+hr {
+  background-color: white;
+  width: 10%;
+}
+a {
+  text-decoration: none;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 15px;
+  width: 35%;
+  border-radius: 20px;
+}
+@media (min-width: 750px) {
+  .grid {
+    grid-template:
+      "seccion1 seccion2"
+      "seccion3 seccion3";
+    margin-top: 0;
+    gap: 10%;
+  }
+  .seccion1 img {
+    width: 100%;
+  }
+  .seccion2 img {
+    margin-top: 0;
+    padding-top: 0;
+    width: 50%;
+  }
+  .seccion3 img {
+    width: 35%;
+  }
+
+  .img2 {
+    gap: 10px;
+  }
+
+  .seccion3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+}
