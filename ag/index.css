@@ -52,6 +52,7 @@ body {
   border: 1px solid #000;
   border-radius: 20px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .info-target {
@@ -91,8 +92,8 @@ body {
   }
 
   .target {
-    width: 100%;
-    align-items: start;
+    width: 50%;
+    align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
