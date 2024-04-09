@@ -84,7 +84,7 @@ h2 {
 
 @media (min-width: 768px) {
   .general {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h2 {
@@ -95,7 +95,7 @@ h2 {
 
 @media (min-width: 900px) {
   .general {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   h2 {

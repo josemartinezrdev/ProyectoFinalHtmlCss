@@ -87,6 +87,7 @@ i {
 
   .grid-item {
     align-items: start;
+    height: 50%;
   }
 
   img {
@@ -102,8 +103,8 @@ i {
   .img2 {
     position: relative;
     z-index: 3;
-    bottom: 35%;
-    left: 10%;
+    bottom: 45%;
+    left: 0%;
   }
 
   .itm1 {
@@ -115,7 +116,8 @@ i {
   .itm3 {
     align-items: center;
     position: relative;
-    bottom: 70%;
+    height: 100%; 
+    bottom: 30%;
   }
 
   .title {
@@ -140,5 +142,9 @@ i {
     flex-direction: row;
     width: 80%;
     height: 100%;
+  }
+
+  .list-item {
+    justify-content: center;
   }
 }

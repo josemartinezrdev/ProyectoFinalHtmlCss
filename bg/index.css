@@ -30,7 +30,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -54,19 +54,19 @@ hr {
 
 .lista {
   background-color: white;
-  padding: 55px 30px;
+  padding: 8% 10%;
   border-radius: 50px;
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   text-align: justify;
 }
 
 .lst-item {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .lst-title {
@@ -80,7 +80,7 @@ hr {
 .container-bot {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -100,7 +100,8 @@ hr {
   }
 
   .itm1 {
-    margin: auto auto 100px auto;
+    margin: auto auto -5% auto;
+    gap: 20px;
   }
 
   .img-1 {
@@ -108,13 +109,21 @@ hr {
   }
 
   .lista {
-    top: 50%;
-    position: absolute;
+    padding: 3%;
+    top: 15%;
+    position: relative;
     flex-direction: row;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
   }
 
   .container-bot {
     flex-direction: row;
+  }
+
+  .container-bot {
+    width: 100%;
   }
 }
