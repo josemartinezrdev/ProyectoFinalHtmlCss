@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins",  sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "seccion1 "
+    "seccion2"
+    "seccion3"
+    "seccion4";
+}
+.seccion1 {
+  grid-area: seccion1;
+  background-color: #efc356;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding: 10%;
+}
+.huella1 {
+  position: absolute;
+}
+.seccion2 {
+  grid-area: seccion2;
+  background-color: #efc356;
+}
+.seccion3 {
+  grid-area: seccion3;
+  background-color: #efeeee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.seccion4 {
+  grid-area: seccion4;
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  background-color: #7eb5e1;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  width: 60%;
+  border-radius: 25px;
+}
+.seccion1 h1,
+p {
+  color: white;
+}
+@media (min-width: 750px) {
+}

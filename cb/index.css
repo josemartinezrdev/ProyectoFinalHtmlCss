@@ -32,10 +32,13 @@ body {
   gap: 20px;
 }
 .seccion1 img {
-  width: 90%;
+  width: 100%;
 }
 .seccion2 {
   grid-area: seccion2;
+}
+.seccion2 img{
+  width: 60%;
 }
 .seccion3 {
   grid-area: seccion3;
@@ -45,7 +48,7 @@ body {
   gap: 10px;
 }
 .seccion3 img {
-  width: 80%;
+  width: 100%;
 }
 h1,
 p {
